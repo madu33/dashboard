@@ -47,6 +47,7 @@ body{
     background: var(--color-background);
     user-select: none;
     overflow-x: hidden;
+    
     color: var(--color-dark);
 }
 
@@ -407,8 +408,41 @@ main .recent-order a{
 .right .recent-updates h2{
     margin-bottom: 0.8rem;
 }
-.right .recent-updates .update{
+.right .recent-updates .updates .update{
     background: var(--color-white);
     padding: var(--card-padding);
     display: flex;
+}
+
+.right .recent-updates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right .sales-analytics{
+    margin-top: 2rem;
+}
+.right .sales-analytics .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .sales-analytics .item:hover{
+    box-shadow: none;
+}
+
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
 }
